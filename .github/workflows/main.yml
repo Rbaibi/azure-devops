@@ -11,9 +11,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          python-version: 3.5
 
       - name: run make command
         run: make hello
